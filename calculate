@@ -1,0 +1,37 @@
+"""This is very easy practise code. It converts a length given 
+in the traditional japanese system
+(units of measurment such as rin, bu, sun etc.) and gives the amount in meters"""
+
+print("Welcome to the traditional japanese to metric calculator!"
+      " Enter a length in the traditional japanese system and see how long it is in meters.")
+amount = float(input("Please enter amount of unit: "))
+unit = input("Please enter unit: Mo, Rin, Bu, Sun, Shaku, Ken, Jo, Cho, Ri: ")
+
+
+if unit == "Mo":
+    x = amount * (1/33.000)
+elif unit == "Rin":
+
+    x = amount * (1/ 3300)
+elif unit == "Bu":
+
+    x = amount * 330
+elif unit == "Sun":
+
+    x = amount * (1 / 33)
+elif unit == "Shaku":
+    x = amount * (10/33)
+elif unit == "Ken":
+
+    x = amount * (20/11)
+elif unit == "Jo":
+
+    x = amount * (100/33)
+elif unit == "Cho":
+
+    x = amount * (1200/11)
+elif unit == "Ri":
+
+    x = amount * (43200/11)
+
+print(f"{amount} {unit} is equal to {round(x,5)} meters.")
